@@ -59,12 +59,12 @@ def run():
     #Personnalisation page centrale
     st.sidebar.success("Vous souhaitez concevoir votre propre interface de prédiction afin de détecter les cas de cancer du poumons ? Retrouvez-nous sur http://www.agence-marketic.fr")
     
-    st.write("Cet interface à pour objectif de faciliter la détection du cancer des poumons. Elle a été conçue à partir d'une base de données de 6000 références de scanner des poumons (sains et cancéreux), et offre une **précision de 99%** dans l'identification des patients atteints par la maladie. Le modèle de prédiction repose sur un réseau de neurones à reconnaissance d'image, aussi connu sous l'appellation de réseaux de neurones convolutifs (CNN).")
+    st.write("Cette interface à pour objectif de faciliter la détection du cancer des poumons. Elle a été conçue à partir d'une base de données de 6000 références de scanner des poumons (sains et cancéreux), et offre une **précision de 99%** dans l'identification des patients atteints par la maladie. Le modèle de prédiction repose sur un réseau de neurones à reconnaissance d'image, aussi connu sous l'appellation de réseaux de neurones convolutifs (CNN).")
     
-    st.write(""" [🟢 - Réalisez un test avec une image de poumons présentant un état sain](https://drive.google.com/uc?export=download&id=1Muzi-Fzf0z4B81Tcpd_5gvDwkQkl40GM)""")
-    st.write(""" [🔴 - Réalisez un test avec une image de poumons présentant un état cancéreux](https://drive.google.com/uc?export=download&id=1Df7eDWDR1hxsTZLGpLYoZbV6BC0uIV8w)""")
+    st.write(""" [🟢 - Cliquez ici pour réaliser un test avec une image de poumons présentant un état sain](https://drive.google.com/uc?export=download&id=1Muzi-Fzf0z4B81Tcpd_5gvDwkQkl40GM)""")
+    st.write(""" [🔴 - Cliquez ici pour réaliser un test avec une image de poumons présentant un état cancéreux](https://drive.google.com/uc?export=download&id=1Df7eDWDR1hxsTZLGpLYoZbV6BC0uIV8w)""")
          
-    file=st.file_uploader(" Veuillez charger une image en cliquant sur ''browse files'' ⬇️ ",type=['jpeg','png','jpg'])
+    file=st.file_uploader(" Veuillez charger une image des deux images en cliquant sur ''browse files'' ⬇️ ",type=['jpeg','png','jpg'])
     
     #Traitement de l'image chargée
     if file is not None :
