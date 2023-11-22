@@ -48,16 +48,16 @@ def run():
     #Logo de l'entreprise
     logo = Image.open('logo.png')
     
-    st.sidebar.image(logo,use_column_width=True)
+    # st.sidebar.image(logo,use_column_width=True)
     
-    st.sidebar.info("Cette application web a été réalisée à des fins de démonstration par l'**Agence Marketic**")
+    st.sidebar.info("Cette application web a été réalisée à des fins de démonstration")
     
     #Illustration médicale
     image2=Image.open('scanner2.jpg')
     st.sidebar.image(image2, use_column_width=True)
     
     #Personnalisation page centrale
-    st.sidebar.success("Vous souhaitez concevoir votre propre interface de prédiction afin de détecter les cas de cancer des poumons ? Retrouvez-nous sur http://www.agence-marketic.fr")
+    st.sidebar.success("Vous souhaitez concevoir votre propre interface de prédiction afin de détecter les cas de cancer des poumons ?)
     
     st.write("Cette interface a pour objectif de faciliter la détection du cancer des poumons. Elle a été conçue à partir d'une base de données de 6000 références de scanner des poumons (sains et cancéreux), et offre une **précision de 99%** dans l'identification des patients atteints par la maladie. Le modèle de prédiction repose sur un réseau de neurones à reconnaissance d'image, aussi connu sous l'appellation de réseaux de neurones convolutifs (CNN).")
     
